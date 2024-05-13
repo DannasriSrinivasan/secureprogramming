@@ -1,0 +1,457 @@
+2023-04-21 02:08:24,472 INFO app MainThread : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 02:08:24,478 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 02:08:24,478 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-04-21 02:08:24,479 INFO werkzeug MainThread :  * Restarting with stat
+2023-04-21 02:08:24,820 INFO app MainThread : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 02:08:24,823 WARNING werkzeug MainThread :  * Debugger is active!
+2023-04-21 02:08:24,832 INFO werkzeug MainThread :  * Debugger PIN: 106-169-006
+2023-04-21 02:08:31,975 INFO app Thread-7 (process_request_thread) : Info log information
+2023-04-21 02:08:31,990 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [21/Apr/2023 02:08:31] "GET /login HTTP/1.1" 200 -
+2023-04-21 02:08:45,519 INFO app Thread-8 (process_request_thread) : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 02:08:45,522 INFO app Thread-8 (process_request_thread) : Listing All Names
+2023-04-21 02:08:45,522 INFO root Thread-8 (process_request_thread) : check Logging listing all names
+2023-04-21 02:08:45,523 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [21/Apr/2023 02:08:45] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 02:58:29,625 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 02:58:29,633 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 02:58:29,633 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2023-04-21 02:58:29,634 INFO werkzeug :  * Restarting with stat
+2023-04-21 02:58:29,977 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 02:58:29,980 WARNING werkzeug :  * Debugger is active!
+2023-04-21 02:58:29,990 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 02:58:35,159 INFO app : Info log information
+2023-04-21 02:58:35,167 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 02:58:35] "GET /login HTTP/1.1" 200 -
+2023-04-21 02:58:45,925 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 02:58:45,928 INFO root : listing all records in the database
+2023-04-21 02:58:46,024 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 02:58:46] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 02:59:29,463 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 02:59:29,465 ERROR root : Name: test1 is not in proper acceptable format.
+2023-04-21 02:59:29,465 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 02:59:29] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 02:59:48,080 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 02:59:48,081 ERROR root : Name: test, abcd is not in proper acceptable format.
+2023-04-21 02:59:48,082 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 02:59:48] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 03:00:24,899 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 03:00:24,908 ERROR root : Name: test abc is not in proper acceptable format.
+2023-04-21 03:00:24,909 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:00:24] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 03:00:42,381 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 03:00:42,382 INFO root : -----------Name Validation Passed----------------
+2023-04-21 03:00:42,388 ERROR root : Phone: 1234567890 is not in proper acceptable format.
+2023-04-21 03:00:42,390 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:00:42] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 03:01:26,733 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 03:01:26,734 INFO root : -----------Name Validation Passed----------------
+2023-04-21 03:01:26,734 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:01:26,746 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:01:26] "POST /PhoneBook/add HTTP/1.1" 200 -
+2023-04-21 03:01:53,916 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 03:01:57,283 INFO root : -----------Name Validation Passed----------------
+2023-04-21 03:01:57,287 ERROR root : Schneier,  Record not found.
+2023-04-21 03:01:57,288 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:01:57] "[33mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 404 -
+2023-04-21 03:03:55,307 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 03:04:04,855 ERROR root : test1 is not in proper acceptable format.
+2023-04-21 03:04:04,859 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:04:04] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 03:04:16,490 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 03:04:23,085 INFO root : -----------Name Validation Passed----------------
+2023-04-21 03:04:23,091 INFO root : Schneier, Bruce Record Deleted Successfully.
+2023-04-21 03:04:23,093 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:04:23] "PUT /PhoneBook/deleteByName HTTP/1.1" 200 -
+2023-04-21 03:04:55,941 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 03:05:24,575 ERROR root : Name: test, acco is not in proper acceptable format.
+2023-04-21 03:05:24,578 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:05:24] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 03:05:38,783 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 03:05:51,599 ERROR root : test, acco is not in proper acceptable format.
+2023-04-21 03:05:51,602 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:05:51] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 03:06:05,173 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 03:06:10,859 ERROR root : test is not in proper acceptable format.
+2023-04-21 03:06:10,862 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:06:10] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 03:06:20,650 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 03:06:25,301 INFO root : -----------Name Validation Passed----------------
+2023-04-21 03:06:25,304 ERROR root : Cher Record not found.
+2023-04-21 03:06:25,307 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:06:25] "[33mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 404 -
+2023-04-21 03:07:02,596 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 03:07:02,598 INFO root : listing all records in the database
+2023-04-21 03:07:02,646 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:07:02] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 03:07:27,745 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 03:07:31,328 INFO root : -----------Name Validation Passed----------------
+2023-04-21 03:07:33,046 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:07:33,054 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:07:33] "POST /PhoneBook/add HTTP/1.1" 200 -
+2023-04-21 03:08:00,039 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:08:00,041 ERROR root : , Phone Number: 123 is not in proper acceptable format.
+2023-04-21 03:08:00,043 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:08:00] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:08:12,191 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:08:12,192 ERROR root : , Phone Number: <script>alert(“XSS”)</script> is not in proper acceptable format.
+2023-04-21 03:08:12,194 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:08:12] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:08:21,033 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:08:21,034 ERROR root : , Phone Number: 4526546456457 is not in proper acceptable format.
+2023-04-21 03:08:21,034 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:08:21] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:08:26,065 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:08:26,065 ERROR root : , Phone Number: 45265464 is not in proper acceptable format.
+2023-04-21 03:08:26,067 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:08:26] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:08:43,320 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:08:43,322 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:08:43,324 ERROR root : Failed to fetch , 1(703)123-1234 Issues with DB Connection.
+2023-04-21 03:08:43,325 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:08:43] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:09:16,452 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:09:23,779 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:10:14,573 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:10:16,129 ERROR root : Failed to fetch , 1(703)123-1234 Issues with DB Connection.
+2023-04-21 03:10:16,138 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:10:16] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:10:18,877 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:10:19,327 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:10:19,331 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:10:19,345 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:10:20,465 INFO app : Info log information
+2023-04-21 03:10:20,468 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:10:21,997 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:10:21,999 ERROR root : 1(703)123-1234 Record not found.
+2023-04-21 03:10:22,001 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:10:22] "[33mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 404 -
+2023-04-21 03:10:30,574 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:10:32,410 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:10:32,413 ERROR root : Failed to fetch , 12345.12345 Issues with DB Connection.
+2023-04-21 03:10:32,414 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:10:32] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:10:40,898 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:10:43,416 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:12:06,319 ERROR root : Failed to fetch , 12345.12345 Issues with DB Connection.
+2023-04-21 03:12:06,322 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:12:06] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:12:13,582 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 03:12:19,606 INFO root : listing all records in the database
+2023-04-21 03:13:53,182 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:13:53] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 03:14:22,422 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:14:25,514 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:14:25,965 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:14:25,969 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:14:25,982 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:14:44,651 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:14:47,668 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:14:48,097 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:14:48,100 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:14:48,112 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:15:13,161 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:15:15,269 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:15:15,687 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:15:15,691 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:15:15,699 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:15:18,626 INFO app : Info log information
+2023-04-21 03:15:18,634 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 03:15:20,594 INFO root : listing all records in the database
+2023-04-21 03:15:20,594 INFO root : Name: swathy  Phone Number: 1234567890
+2023-04-21 03:15:20,595 INFO root : Name: dannasri  Phone Number: 5129543464
+2023-04-21 03:15:20,595 INFO root : Name: harshini  Phone Number: 9952971840
+2023-04-21 03:15:20,595 INFO root : Name: ammu  Phone Number: 9790919874
+2023-04-21 03:15:20,595 INFO root : Name: harsh  Phone Number: 9176427273
+2023-04-21 03:15:20,595 INFO root : Name: O'Malley, John F.  Phone Number: 12345.12345
+2023-04-21 03:15:20,598 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:15:20] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 03:15:39,070 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:15:42,728 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:17:17,361 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:17:20,477 ERROR root : Failed to fetch , 12345.12345 Issues with DB Connection.
+2023-04-21 03:17:20,482 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:17:20] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:17:22,825 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:17:23,244 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:17:23,247 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:17:23,259 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:17:24,017 INFO app : Info log information
+2023-04-21 03:17:24,033 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:17:26,339 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:17:44,115 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:17:45,103 ERROR root : Failed to fetch , 12345.12345 Issues with DB Connection.
+2023-04-21 03:17:46,110 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:17:46] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 03:17:46,750 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:17:47,167 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:17:47,170 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:17:47,178 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:17:48,095 INFO app : Info log information
+2023-04-21 03:17:48,105 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 03:17:49,404 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 03:17:49,409 INFO root : O'Malley, John F., 12345.12345 Record Deleted Successfully.
+2023-04-21 03:17:49,411 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:17:49] "PUT /PhoneBook/deleteByNumber HTTP/1.1" 200 -
+2023-04-21 03:19:38,878 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:19:43,376 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:19:43,781 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:19:43,785 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:19:43,793 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:20:51,614 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 03:20:54,450 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:20:54,867 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:20:54,870 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:20:54,880 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:24:28,868 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:24:28,873 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 03:24:28,873 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2023-04-21 03:24:28,874 INFO werkzeug :  * Restarting with stat
+2023-04-21 03:24:29,224 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 03:24:29,226 WARNING werkzeug :  * Debugger is active!
+2023-04-21 03:24:29,240 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 03:24:33,163 INFO app : Info log information
+2023-04-21 03:24:33,176 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:24:33] "GET /login HTTP/1.1" 200 -
+2023-04-21 03:24:41,799 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 03:24:43,857 INFO root : listing all records in the database
+2023-04-21 03:24:43,857 INFO root : Name: swathy  Phone Number: 1234567890
+2023-04-21 03:24:43,857 INFO root : Name: dannasri  Phone Number: 5129543464
+2023-04-21 03:24:43,857 INFO root : Name: harshini  Phone Number: 9952971840
+2023-04-21 03:24:43,857 INFO root : Name: ammu  Phone Number: 9790919874
+2023-04-21 03:24:43,857 INFO root : Name: harsh  Phone Number: 9176427273
+2023-04-21 03:24:43,858 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:24:43] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 03:24:50,071 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:24:50] "[31m[1mGET /PhoneBook/list HTTP/1.1[0m" 403 -
+2023-04-21 03:24:53,807 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:24:53] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 403 -
+2023-04-21 03:24:56,070 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:24:56] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 403 -
+2023-04-21 03:24:58,396 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 03:24:58] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 403 -
+2023-04-21 16:45:29,785 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 16:45:29,852 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 16:45:29,852 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2023-04-21 16:45:29,854 INFO werkzeug :  * Restarting with stat
+2023-04-21 16:45:30,687 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 16:45:30,691 WARNING werkzeug :  * Debugger is active!
+2023-04-21 16:45:30,792 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 16:48:40,613 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/test_app.py", reloading
+2023-04-21 16:48:46,879 INFO werkzeug :  * Restarting with stat
+2023-04-21 16:48:47,801 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 16:48:47,806 WARNING werkzeug :  * Debugger is active!
+2023-04-21 16:48:47,819 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 16:49:20,748 INFO app : Info log information
+2023-04-21 16:49:20,765 INFO root : Phonebook table exists already or not created successfully
+2023-04-21 16:49:20,767 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 16:49:20] "[33mGET /PhoneBook/login HTTP/1.1[0m" 404 -
+2023-04-21 16:49:32,426 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 16:49:32] "[33mGET /PhoneBook/login HTTP/1.1[0m" 404 -
+2023-04-21 17:49:34,751 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 17:49:34,758 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 17:49:34,758 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2023-04-21 17:49:34,759 INFO werkzeug :  * Restarting with stat
+2023-04-21 17:49:35,114 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 17:49:35,117 WARNING werkzeug :  * Debugger is active!
+2023-04-21 17:49:35,133 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 17:49:59,523 INFO app : Info log information
+2023-04-21 17:49:59,530 INFO root : Phonebook table exists already or not created successfully
+2023-04-21 17:50:07,009 INFO root : Phonebook table created successfully
+2023-04-21 17:50:24,077 INFO root : Name: Dannasri and Phone Number: Qwerty123 added successfully
+2023-04-21 17:50:27,777 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 17:50:27] "GET /usertable HTTP/1.1" 200 -
+2023-04-21 17:51:33,423 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 17:51:36,543 INFO werkzeug :  * Restarting with stat
+2023-04-21 17:59:09,113 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 17:59:09,121 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 17:59:09,125 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2023-04-21 17:59:09,127 INFO werkzeug :  * Restarting with stat
+2023-04-21 17:59:09,474 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 17:59:09,477 WARNING werkzeug :  * Debugger is active!
+2023-04-21 17:59:09,504 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 17:59:30,433 INFO app : Info log information
+2023-04-21 17:59:30,442 INFO root : Phonebook table exists already or not created successfully
+2023-04-21 17:59:32,516 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:00:00,891 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 18:00:02,716 ERROR root : Dannasri Record not found.
+2023-04-21 18:00:02,720 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:00:02] "[31m[1mGET /PhoneBook/list HTTP/1.1[0m" 400 -
+2023-04-21 18:00:04,597 INFO werkzeug :  * Restarting with stat
+2023-04-21 18:00:04,987 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 18:00:04,994 WARNING werkzeug :  * Debugger is active!
+2023-04-21 18:00:05,026 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 18:00:06,638 INFO app : Info log information
+2023-04-21 18:00:06,641 INFO root : Phonebook table exists already or not created successfully
+2023-04-21 18:00:08,257 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:00:34,944 INFO root : Name: Dannasri and Phone Number: Qwerty123 added successfully
+2023-04-21 18:00:36,320 INFO root : listing all records in the database
+2023-04-21 18:00:36,321 INFO root : Name: swathy  Phone Number: 1234567890
+2023-04-21 18:00:36,321 INFO root : Name: dannasri  Phone Number: 5129543464
+2023-04-21 18:00:36,321 INFO root : Name: harshini  Phone Number: 9952971840
+2023-04-21 18:00:36,321 INFO root : Name: ammu  Phone Number: 9790919874
+2023-04-21 18:00:36,322 INFO root : Name: harsh  Phone Number: 9176427273
+2023-04-21 18:00:37,941 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:00:37] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 18:01:18,334 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:01:26,494 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:01:26] "[31m[1mGET /PhoneBook/list HTTP/1.1[0m" 400 -
+2023-04-21 18:01:33,738 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:01:38,770 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:01:38] "[31m[1mGET /PhoneBook/list HTTP/1.1[0m" 400 -
+2023-04-21 18:01:53,847 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:01:55,297 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:01:55] "[31m[1mGET /PhoneBook/list HTTP/1.1[0m" 400 -
+2023-04-21 18:02:13,998 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:03:11,200 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:03:11] "[31m[1mGET /PhoneBook/list HTTP/1.1[0m" 400 -
+2023-04-21 18:12:25,246 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 18:12:25,259 INFO werkzeug : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-04-21 18:12:25,259 INFO werkzeug : [33mPress CTRL+C to quit[0m
+2023-04-21 18:12:25,262 INFO werkzeug :  * Restarting with stat
+2023-04-21 18:12:28,486 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 18:12:28,489 WARNING werkzeug :  * Debugger is active!
+2023-04-21 18:12:28,508 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 18:12:52,494 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:12:58,977 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:12:58] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 18:13:44,076 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:13:48,477 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:13:48] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 18:13:54,388 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:14:01,252 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:14:01] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 18:14:10,205 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:14:11,848 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:14:11] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 18:14:28,836 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:14:30,545 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:14:30] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 18:14:40,836 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:14:42,700 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:14:42] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 18:14:55,707 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:16:16,113 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:16:16] "[31m[1mPOST /PhoneBook/add HTTP/1.1[0m" 400 -
+2023-04-21 18:16:45,235 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:16:45,242 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:16:45] "[31m[1mGET /PhoneBook/list HTTP/1.1[0m" 400 -
+2023-04-21 18:16:50,866 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:16:50,870 INFO root : Authentication passed
+2023-04-21 18:16:50,870 INFO root : listing all records in the database
+2023-04-21 18:16:50,870 INFO root : Name: swathy  Phone Number: 1234567890
+2023-04-21 18:16:50,870 INFO root : Name: dannasri  Phone Number: 5129543464
+2023-04-21 18:16:50,870 INFO root : Name: harshini  Phone Number: 9952971840
+2023-04-21 18:16:50,870 INFO root : Name: ammu  Phone Number: 9790919874
+2023-04-21 18:16:50,870 INFO root : Name: harsh  Phone Number: 9176427273
+2023-04-21 18:16:50,873 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:16:50] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 18:16:58,077 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:17:00,343 INFO root : Authentication Passed
+2023-04-21 18:17:00,344 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:17:00,348 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:17:00,351 INFO root : Name: O'Malley, John F. and Phone Number: 12345.12345 added successfully
+2023-04-21 18:17:00,352 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:17:00] "POST /PhoneBook/add HTTP/1.1" 200 -
+2023-04-21 18:17:10,709 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:17:10,710 INFO root : Authentication passed
+2023-04-21 18:17:10,711 INFO root : listing all records in the database
+2023-04-21 18:17:10,711 INFO root : Name: swathy  Phone Number: 1234567890
+2023-04-21 18:17:10,711 INFO root : Name: dannasri  Phone Number: 5129543464
+2023-04-21 18:17:10,711 INFO root : Name: harshini  Phone Number: 9952971840
+2023-04-21 18:17:10,711 INFO root : Name: ammu  Phone Number: 9790919874
+2023-04-21 18:17:10,711 INFO root : Name: harsh  Phone Number: 9176427273
+2023-04-21 18:17:10,711 INFO root : Name: O'Malley, John F.  Phone Number: 12345.12345
+2023-04-21 18:17:10,712 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:17:10] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 18:17:49,670 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:17:53,167 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:17:53] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 18:18:03,686 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:18:03,689 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:18:03] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 18:18:12,964 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:18:12,966 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:18:12] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 18:18:17,193 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:18:17,196 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:18:17] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 18:18:38,179 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:18:38,181 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:18:38] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 18:18:51,782 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:18:51,787 INFO root : Authentication Passed
+2023-04-21 18:18:51,788 ERROR root : Phone Number: 12345.1234 is not in proper acceptable format.
+2023-04-21 18:18:51,790 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:18:51] "[31m[1mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 400 -
+2023-04-21 18:18:58,474 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:18:58,476 INFO root : Authentication Passed
+2023-04-21 18:18:58,476 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:18:58,477 ERROR root : 12345.12346 Record not found.
+2023-04-21 18:18:58,478 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:18:58] "[33mPUT /PhoneBook/deleteByNumber HTTP/1.1[0m" 404 -
+2023-04-21 18:19:04,261 INFO app : -----------------------------------------Inside Delete by phone API--------------------------------------------
+2023-04-21 18:19:04,263 INFO root : Authentication Passed
+2023-04-21 18:19:04,263 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:19:04,266 INFO root : O'Malley, John F., 12345.12345 Record Deleted Successfully.
+2023-04-21 18:19:04,267 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:19:04] "PUT /PhoneBook/deleteByNumber HTTP/1.1" 200 -
+2023-04-21 18:19:09,599 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:19:13,685 INFO root : Authentication Passed
+2023-04-21 18:19:13,687 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:19:13,687 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:19:13,691 INFO root : Name: O'Malley, John F. and Phone Number: 12345.12345 added successfully
+2023-04-21 18:19:13,693 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:19:13] "POST /PhoneBook/add HTTP/1.1" 200 -
+2023-04-21 18:19:41,925 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:19:44,980 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:19:44] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 18:20:11,592 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:20:11,594 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:20:11] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 18:20:20,577 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:20:20,586 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:20:20] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 18:20:45,887 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:20:45,891 INFO root : Authentication Passed
+2023-04-21 18:20:45,893 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:20:45,895 ERROR root : O'Malley, John F Record not found.
+2023-04-21 18:20:45,901 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:20:45] "[33mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 404 -
+2023-04-21 18:21:01,786 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:21:01,789 INFO root : Authentication Passed
+2023-04-21 18:21:01,790 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:21:01,791 ERROR root : O''Malley, John F. Record not found.
+2023-04-21 18:21:01,798 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:21:01] "[33mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 404 -
+2023-04-21 18:21:42,005 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:21:42,012 INFO root : Authentication Passed
+2023-04-21 18:21:42,013 ERROR root : Ron O’’Henry is not in proper acceptable format.
+2023-04-21 18:21:42,017 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:21:42] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 18:21:50,591 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:21:50,593 INFO root : Authentication Passed
+2023-04-21 18:21:50,594 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:21:50,597 INFO root : O'Malley, John F. Record Deleted Successfully.
+2023-04-21 18:21:50,598 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:21:50] "PUT /PhoneBook/deleteByName HTTP/1.1" 200 -
+2023-04-21 18:21:58,302 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:21:58,306 INFO root : Authentication passed
+2023-04-21 18:21:58,308 INFO root : listing all records in the database
+2023-04-21 18:21:58,308 INFO root : Name: swathy  Phone Number: 1234567890
+2023-04-21 18:21:58,308 INFO root : Name: dannasri  Phone Number: 5129543464
+2023-04-21 18:21:58,308 INFO root : Name: harshini  Phone Number: 9952971840
+2023-04-21 18:21:58,308 INFO root : Name: ammu  Phone Number: 9790919874
+2023-04-21 18:21:58,308 INFO root : Name: harsh  Phone Number: 9176427273
+2023-04-21 18:21:58,310 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:21:58] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 18:28:56,087 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 18:28:59,219 INFO werkzeug :  * Restarting with stat
+2023-04-21 18:28:59,699 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 18:28:59,703 WARNING werkzeug :  * Debugger is active!
+2023-04-21 18:28:59,724 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 18:29:21,913 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:29:21,923 INFO root : Authentication Passed
+2023-04-21 18:29:21,924 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:29:21,925 INFO root : swathy Record Deleted Successfully.
+2023-04-21 18:29:21,927 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:29:21] "PUT /PhoneBook/deleteByName HTTP/1.1" 200 -
+2023-04-21 18:29:33,430 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:29:33,433 INFO root : Authentication Passed
+2023-04-21 18:29:33,434 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:29:33,441 INFO root : dannasri Record Deleted Successfully.
+2023-04-21 18:29:33,443 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:29:33] "PUT /PhoneBook/deleteByName HTTP/1.1" 200 -
+2023-04-21 18:29:42,074 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:29:42,077 INFO root : Authentication Passed
+2023-04-21 18:29:42,078 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:29:42,081 INFO root : harshini Record Deleted Successfully.
+2023-04-21 18:29:42,088 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:29:42] "PUT /PhoneBook/deleteByName HTTP/1.1" 200 -
+2023-04-21 18:29:51,903 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:29:51,905 INFO root : Authentication Passed
+2023-04-21 18:29:51,906 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:29:51,908 INFO root : ammu Record Deleted Successfully.
+2023-04-21 18:29:51,910 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:29:51] "PUT /PhoneBook/deleteByName HTTP/1.1" 200 -
+2023-04-21 18:29:59,828 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:29:59,834 INFO root : Authentication Passed
+2023-04-21 18:29:59,835 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:29:59,838 INFO root : harsh Record Deleted Successfully.
+2023-04-21 18:29:59,843 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:29:59] "PUT /PhoneBook/deleteByName HTTP/1.1" 200 -
+2023-04-21 18:30:02,359 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:30:02,361 INFO root : Authentication passed
+2023-04-21 18:30:02,364 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:30:02] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 18:30:35,330 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:30:35,334 INFO root : Authentication Passed
+2023-04-21 18:30:35,335 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:30:35,339 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:30:35,343 INFO root : Name: Dannasri Srinivasan and Phone Number: 512 954 3464 added successfully
+2023-04-21 18:30:35,344 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:30:35] "POST /PhoneBook/add HTTP/1.1" 200 -
+2023-04-21 18:30:45,528 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:30:45,536 INFO root : Authentication Passed
+2023-04-21 18:30:45,537 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:30:45,537 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:30:45,540 INFO root : Name: Hrshini Srinivasan and Phone Number: 512 954 3465 added successfully
+2023-04-21 18:30:45,542 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:30:45] "POST /PhoneBook/add HTTP/1.1" 200 -
+2023-04-21 18:31:20,471 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:31:20,476 INFO root : Authentication Passed
+2023-04-21 18:31:20,477 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:31:20,477 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:31:20,485 INFO root : Name: Sriharshan and Phone Number: 512 954 3465 added successfully
+2023-04-21 18:31:20,487 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:31:20] "POST /PhoneBook/add HTTP/1.1" 200 -
+2023-04-21 18:31:21,930 INFO app : -----------------------------------------Inside Inserting the record API--------------------------------------------
+2023-04-21 18:31:21,944 INFO root : Authentication Passed
+2023-04-21 18:31:21,960 INFO root : -----------Name Validation Passed----------------
+2023-04-21 18:31:21,961 INFO root : -----------Phone Number Validation Passed----------------
+2023-04-21 18:31:21,962 ERROR root : Sriharshan Record already exists.
+2023-04-21 18:31:21,982 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:31:21] "[33mPOST /PhoneBook/add HTTP/1.1[0m" 404 -
+2023-04-21 18:31:42,992 INFO app : -----------------------------------------Inside List API--------------------------------------------
+2023-04-21 18:31:43,018 INFO root : Authentication passed
+2023-04-21 18:31:43,021 INFO root : listing all records in the database
+2023-04-21 18:31:43,021 INFO root : Name: Dannasri Srinivasan  Phone Number: 512 954 3464
+2023-04-21 18:31:43,021 INFO root : Name: Hrshini Srinivasan  Phone Number: 512 954 3465
+2023-04-21 18:31:43,021 INFO root : Name: Sriharshan  Phone Number: 512 954 3465
+2023-04-21 18:31:43,024 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:31:43] "GET /PhoneBook/list HTTP/1.1" 200 -
+2023-04-21 18:31:56,607 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 18:32:00,827 INFO werkzeug :  * Restarting with stat
+2023-04-21 18:32:01,340 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 18:32:01,351 WARNING werkzeug :  * Debugger is active!
+2023-04-21 18:32:01,373 INFO werkzeug :  * Debugger PIN: 106-169-006
+2023-04-21 18:32:04,294 INFO app : -----------------------------------------Inside Delete by name API--------------------------------------------
+2023-04-21 18:32:04,300 INFO root : Authentication Passed
+2023-04-21 18:32:04,302 ERROR root : harsh is not in proper acceptable format.
+2023-04-21 18:32:04,306 INFO werkzeug : 127.0.0.1 - - [21/Apr/2023 18:32:04] "[31m[1mPUT /PhoneBook/deleteByName HTTP/1.1[0m" 400 -
+2023-04-21 18:39:57,035 INFO werkzeug :  * Detected change in "/Users/dannasri/Desktop/UTA/Spring'23/SecurePrograming /dxs8730Assignment11/app.py", reloading
+2023-04-21 18:40:00,104 INFO werkzeug :  * Restarting with stat
+2023-04-21 18:40:00,534 INFO app : -----------------------------------------Satrting the Application--------------------------------------------
+2023-04-21 18:40:00,539 WARNING werkzeug :  * Debugger is active!
+2023-04-21 18:40:00,550 INFO werkzeug :  * Debugger PIN: 106-169-006
